@@ -293,3 +293,8 @@ const borrarHistorial = () => {
 const irAGithub = () => {
     window.open('https://github.com/firf18/mi-portafolio/tree/main/calculadora', '_blank');
   };
+
+  // Función para regresar al portafolio
+const irAPortafolio = () => {
+    window.location.href = 'https://firf18.github.io/mi-portafolio/'; 
+  };

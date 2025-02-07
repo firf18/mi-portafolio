@@ -17,25 +17,25 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .calculadora {
     background-color: #34495e;
-  padding: 20px;
+  padding: 10px;
   border-radius: 15px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   width: 100%;
 }
 
 #pantalla {
-    width: calc(100% - 30px);
-    min-height: 80px;
+    width: calc(100% - 20px);
+    min-height: 60px;
     /* Aumentar la altura para mejor visibilidad */
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: right;
-    padding: 15px;
-    font-size: 28px;
+    padding: 10px;
+    font-size: 24px;
     /* Tamaño de fuente más grande por defecto */
     border: none;
     border-radius: 8px;
@@ -48,16 +48,16 @@ body {
 }
 
 .historial {
-    height: 100px;
+    height: 60px;
     /* Aumentar altura para más espacio */
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
     background-color: #2c3e50;
     /* Fondo más claro */
     color: #ffffff;
     border-radius: 8px;
     overflow-y: auto;
-    font-size: 16px;
+    font-size: 14px;
     /* Texto más grande para legibilidad */
     border: 1px solid rgba(255, 255, 255, 0.2);
     /* Bordes para definición */
@@ -68,11 +68,11 @@ body {
 .botones {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 8px;
 }
 
 button {
-    padding: 20px;
+    padding: 12px;
     font-size: 18px;
     border: none;
     border-radius: 8px;
@@ -102,8 +102,8 @@ button:hover {
   }
 
 #toggleTema {
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 8px;
     background-color: #8e44ad;
     color: white;
     border: none;
@@ -117,12 +117,12 @@ button:hover {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
 }
 
 footer button{
-    margin: 10px 0 20px 0;
+    margin: 8px 0 10px 0;
 }
 /* Estilos para botones especiales */
 button:nth-child(5),
@@ -276,22 +276,43 @@ body.tema-claro {
 .github-button:active {
     background-color: #219653;
 }
-
+/* Estilos para el botón de volver al portafolio */
+.portafolio-button {
+    background-color: #9b59b6; /* Morado */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 8px 0 10px 0;
+  }
+  
+  .portafolio-button:hover {
+    background-color: #8e44ad; /* Morado más oscuro */
+  }
+  
+  .portafolio-button:active {
+    background-color: #7d3c98; /* Morado aún más oscuro */
+  }
 /* Media Queries para responsividad */
 @media (max-width: 480px) {
+    .container {
+        max-width: 300px; /* Ajustamos el ancho máximo para móviles */
+      }
     .calculadora {
       width: 100%;
       padding: 15px;
     }
   
     button {
-      padding: 15px;
-      font-size: 16px;
+      padding: 10px;
+      font-size: 14px;
     }
   
     #pantalla {
-      font-size: 24px;
-      min-height: 70px;
+      font-size: 20px;
+      min-height: 50px;
     }
   
     .historial {
@@ -301,13 +322,13 @@ body.tema-claro {
   
   @media (min-width: 768px) {
     .container {
-      max-width: 500px;
+      max-width: 400px;
     }
   }
   
   @media (min-width: 1024px) {
     .container {
-      max-width: 600px;
+      max-width: 400px;
     }
   }
 
