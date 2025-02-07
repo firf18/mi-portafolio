@@ -291,5 +291,5 @@ const borrarHistorial = () => {
 
   // Función para redirigir al código en GitHub
 const irAGithub = () => {
-    window.open('https://github.com/tu-usuario/tu-repositorio', '_blank');
+    window.open('https://github.com/firf18/mi-portafolio/tree/main/calculadora', '_blank');
   };
