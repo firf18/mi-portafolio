@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+  }
+  
+  .calculadora {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 320px;
+  }
+  
+  #pantalla {
+    width: 93.5%;
+    height: 60px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    font-size: 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+  }
+ 
+  .historial {
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 8px;
+    overflow-y: auto;
+    font-size: 14px;
+    scrollbar-width: thin; /* Para navegadores que soportan scrollbar-width */
+    scrollbar-color: #3498db #2c3e50; /* Color del scroll */
+  }
+  /* Estilos para la barra de scroll en navegadores WebKit (Chrome, Safari) */
+.historial::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .historial::-webkit-scrollbar-track {
+    background: #2c3e50;
+    border-radius: 4px;
+  }
+  
+  .historial::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+  }
+  
+  .historial::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+  }
+  
+  .botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:active {
+    background-color: #1c5980;
+  }
+  
+  .igual {
+    grid-column: span 4;
+    background-color: #e67e22;
+  }
+  
+  .igual:hover {
+    background-color: #d35400;
+  }
+  
+  .igual:active {
+    background-color: #a84300;
+  }
+  
+  /* Estilos para botones especiales */
+  button:nth-child(6),
+  button:nth-child(7),
+  button:nth-child(8),
+  button:nth-child(9),
+  button:nth-child(10),
+  button:nth-child(11),
+  button:nth-child(12),
+  button:nth-child(13) {
+    background-color: #8e44ad;
+  }
+  
+  button:nth-child(6):hover,
+  button:nth-child(7):hover,
+  button:nth-child(8):hover,
+  button:nth-child(9):hover,
+  button:nth-child(10):hover,
+  button:nth-child(11):hover,
+  button:nth-child(12):hover,
+  button:nth-child(13):hover {
+    background-color: #732d91;
+  }
+  
+  button:nth-child(6):active,
+  button:nth-child(7):active,
+  button:nth-child(8):active,
+  button:nth-child(9):active,
+  button:nth-child(10):active,
+  button:nth-child(11):active,
+  button:nth-child(12):active,
+  button:nth-child(13):active {
+    background-color: #5b2a72;
+  }
+  
+
+  /* Animación al hacer clic en los botones */
+button {
+    transition: transform 0.1s ease, background-color 0.3s ease;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Estilos para el tema claro */
+  body.tema-claro {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  .calculadora.tema-claro {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calculadora.tema-claro #pantalla,
+  .calculadora.tema-claro .historial {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  .calculadora.tema-claro button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .calculadora.tema-claro button:hover {
+    background-color: #2980b9;
+  }
+  
+  .calculadora.tema-claro button:active {
+    background-color: #1c5980;
+  }
+  
+  .calculadora.tema-claro .igual {
+    background-color: #e67e22;
+  }
+  
+  .calculadora.tema-claro .igual:hover {
+    background-color: #d35400;
+  }
+  
+  .calculadora.tema-claro .igual:active {
+    background-color: #a84300;
+  }
+  
+  /* Estilos para el botón de alternar tema */
+  #toggleTema {
+    margin-left: 20px;
+    padding: 15px;
+    width: 5%;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggleTema:hover {
+    background-color: #732d91;
+  }
+  
+  #toggleTema:active {
+    background-color: #5b2a72;
+  }
+
+  /* Estilos para el botón de borrar historial */
+.borrar-historial {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .borrar-historial:hover {
+    background-color: #c0392b;
+  }
+  
+  .borrar-historial:active {
+    background-color: #96281b;
+  }
+  
+  /* Estilos para el botón de GitHub */
+  .github-button {
+    width: 10%;
+    padding: 10px;
+    margin: 80vh 0 0 0;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .github-button:hover {
+    background-color: #27ae60;
+  }
+  
+  .github-button:active {
+    background-color: #219653;
+  }

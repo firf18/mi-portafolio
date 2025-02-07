@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Mi portafolio</h1>
@@ -17,18 +20,61 @@
 
     <section id="Inicio">
         <h2>Bienvenido a mi portafolio.</h2>
-        <p>¡Hola! Soy Freddy, un desarrollador y me encanta crear cosas nuevas. En este sitio web podrás ver algunos de mis proyectos.</p>
+        <p>¡Hola! Soy Freddy, un desarrollador y me encanta crear cosas nuevas. En este sitio web podrás ver algunos de
+            mis proyectos.</p>
     </section>
     <section id="Proyectos">
         <h2>Proyectos</h2>
         <div class="Proyectos-Container">
-            <!--Aqui iran los proyectos-->
-            <p>Proximamente...</p>
-        </div>
+            <!-- Proyecto 1 -->
+            <div class="Proyecto">
+                <div class="icon">
+                    <div class="add">+</div>
+                    <div class="subtract">-</div>
+                    <div class="multiply">×</div>
+                    <div class="equals">=</div>
+                </div>
+                <h3>Calculadora Científica Avanzada</h3>
+                <p>Una calculadora avanzada que realiza operaciones básicas, científicas y trigonométricas (factorial,
+                    logaritmos, seno, coseno, tangente, exponencial, potencias, constantes) con un diseño moderno,
+                    interactivo y soporte para temas oscuro/claro.</p>
+                <br>
+                <strong>Conocimientos Aplicados</strong>
+                <ul>
+                    <li><strong>HTML</strong>: Estructura semántica del proyecto.</li>
+                    <li><strong>CSS</strong>: Diseño responsive y uso de CSS Grid y efectos visuales.</li>
+                    <li><strong>JavaScript</strong>: Logica avanzada, manejo de errores y buenas practicas de
+                        programación.</li>
+                </ul>
+                <a href="calculadora/index.html">Ver mas</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="Proyecto">
+                <img src="https://via.placeholder.com/150" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Description del proyecto 2</p>
+                <a href="#">Ver mas</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="Proyecto">
+                <img src="https://via.placeholder.com/150" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Description del proyecto 3</p>
+                <a href="#">Ver mas</a>
+            </div>
     </section>
     <section id="Contacto">
         <h2>Contacto</h2>
-        <p>Puedes contactarme en: firf.1818@gmail.com</p>
+        <form id="formulario-contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2025 Mi Portafolio</p>
@@ -36,4 +82,5 @@
 
     <script src="Script.js"></script>
 </body>
+
 </html>
