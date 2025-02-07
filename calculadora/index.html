@@ -9,54 +9,53 @@
 </head>
 
 <body>
-    <div class="calculadora">
-        <input type="text" id="pantalla" disabled>
-
-        <div class="historial" id="historial"></div>
-        <button onclick="borrarHistorial()" class="borrar-historial">Borrar Historial</button>
-        <div class="botones">
-            <button onclick="limpiarPantalla()">C</button>
-            <button onclick="borrarUltimoNumero()">←</button>
-            <button onclick="cambiarSigno()">±</button>
-            <button onclick="agregarPorcentaje()">%</button>
-            <button onclick="calcularRaizCuadrada()">√</button>
-            <button onclick="calcularFactorial()">!</button>
-            <button onclick="calcularExponencial()">eˣ</button>
-            <button onclick="calcularPotenciaBase10()">10ˣ</button>
-            <button onclick="calcularPi()">π</button>
-            <button onclick="calcularEuler()">e</button>
-            <button onclick="calcularLogaritmoNatural()">Ln</button>
-            <button onclick="calcularLogaritmoBase10()">Log</button>
-            <button onclick="calcularSeno()">Sin</button>
-            <button onclick="calcularCoseno()">Cos</button>
-            <button onclick="calcularTangente()">Tan</button>
-            <button onclick="calcularValorAbsoluto()">[x]</button>
-            <button onclick="agregarOperador('/')">/</button>
-
-            <button onclick="agregarNumero('7')">7</button>
-            <button onclick="agregarNumero('8')">8</button>
-            <button onclick="agregarNumero('9')">9</button>
-            <button onclick="agregarOperador('*')">*</button>
-            <button onclick="agregarNumero('4')">4</button>
-            <button onclick="agregarNumero('5')">5</button>
-            <button onclick="agregarNumero('6')">6</button>
-            <button onclick="agregarOperador('-')">-</button>
-            <button onclick="agregarNumero('1')">1</button>
-            <button onclick="agregarNumero('2')">2</button>
-            <button onclick="agregarNumero('3')">3</button>
-            <button onclick="agregarOperador('+')">+</button>
-
-
-
-
-            <button onclick="agregarNumero('0')">0</button>
-            <button onclick="agregarDecimal()">.</button>
-            <button onclick="calcularPotencia()">x²</button>
-            <button onclick="calcularResultado()" class="igual">=</button>
+    <div class="container">
+        <div class="calculadora">
+            <input type="text" id="pantalla" disabled>
+            <div class="historial" id="historial"></div>
+            <button onclick="borrarHistorial()" class="borrar-historial">Borrar Historial</button>
+            <div class="botones">
+                <button onclick="limpiarPantalla()">C</button>
+                <button onclick="borrarUltimoNumero()">←</button>
+                <button onclick="cambiarSigno()">±</button>
+                <button onclick="agregarPorcentaje()">%</button>
+                <button onclick="calcularRaizCuadrada()">√</button>
+                <button onclick="calcularFactorial()">!</button>
+                <button onclick="calcularExponencial()">eˣ</button>
+                <button onclick="calcularPotenciaBase10()">10ˣ</button>
+                <button onclick="calcularPi()">π</button>
+                <button onclick="calcularEuler()">e</button>
+                <button onclick="calcularLogaritmoNatural()">Ln</button>
+                <button onclick="calcularLogaritmoBase10()">Log</button>
+                <button onclick="calcularSeno()">Sin</button>
+                <button onclick="calcularCoseno()">Cos</button>
+                <button onclick="calcularTangente()">Tan</button>
+                <button onclick="calcularValorAbsoluto()">[x]</button>
+                <button onclick="agregarOperador('/')">/</button>
+                <button onclick="agregarNumero('7')">7</button>
+                <button onclick="agregarNumero('8')">8</button>
+                <button onclick="agregarNumero('9')">9</button>
+                <button onclick="agregarOperador('*')">*</button>
+                <button onclick="agregarNumero('4')">4</button>
+                <button onclick="agregarNumero('5')">5</button>
+                <button onclick="agregarNumero('6')">6</button>
+                <button onclick="agregarOperador('-')">-</button>
+                <button onclick="agregarNumero('1')">1</button>
+                <button onclick="agregarNumero('2')">2</button>
+                <button onclick="agregarNumero('3')">3</button>
+                <button onclick="agregarOperador('+')">+</button>
+                <button onclick="agregarNumero('0')">0</button>
+                <button onclick="agregarDecimal()">.</button>
+                <button onclick="calcularPotencia()">x²</button>
+                <button onclick="calcularResultado()" class="igual">=</button>
+            </div>
         </div>
+        <button id="toggleTema" onclick="alternarTema()">🌙</button>
     </div>
-    <button id="toggleTema" onclick="alternarTema()">🌙</button>
-    <button onclick="irAGithub()" class="github-button">Ver Código en GitHub</button>
+    <footer>
+        <p>Desarrollado por <strong>Freddy Ramirez</strong></p>
+        <button onclick="irAGithub()" class="github-button">Ver Código en GitHub</button>
+    </footer>
 
     <script src="script.js"></script>
 </body>
